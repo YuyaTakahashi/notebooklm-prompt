@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>NotebookLM Prompt Inserter</title>
+  <style>
+    body { width: 280px; padding: 12px; font-family: sans-serif; background: #fff; }
+    h4 { margin: 0 0 12px 0; font-size: 14px; color: #5f6368; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+    .btn-group { display: flex; flex-direction: column; gap: 8px; }
+    button { 
+      padding: 10px; font-size: 13px; cursor: pointer; 
+      background: #f8f9fa; border: 1px solid #dadce0; border-radius: 6px;
+      text-align: left; transition: 0.2s;
+    }
+    button:hover { background: #e8f0fe; border-color: #1a73e8; }
+    #status { color: #1a73e8; font-size: 12px; font-weight: bold; display: none; margin-top: 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <h4>📊 データ・提案系</h4>
+  <div class="btn-group">
+    <button id="btn-viz">📊 数字系の可視化資料</button>
+    <button id="btn-manual">📖 業務マニュアル作成</button>
+    <button id="btn-proposal">💡 企画・提案用スライド</button>
+  </div>
+
+  <h4 style="margin-top:15px;">🧠 思考・解釈系</h4>
+  <div class="btn-group">
+    <button id="btn-diagram">🗺️ 図解構成の作成</button>
+    <button id="btn-easy">🌱 わかりやすい解説</button>
+    <button id="btn-book">📚 書籍要約（スライド分割）</button>
+  </div>
+
+  <div id="status">入力欄に挿入しました！</div>
+
+  <script src="popup.js"></script>
+  <script src="prompts/viz.js"></script>
+  <script src="prompts/manual.js"></script>
+  <script src="prompts/proposal.js"></script>
+  <script src="prompts/diagram.js"></script>
+  <script src="prompts/easy.js"></script>
+  <script src="prompts/book.js"></script>
+</body>
+</html>

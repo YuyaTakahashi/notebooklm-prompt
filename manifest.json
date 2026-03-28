@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "NotebookLM Prompt Inserter",
+  "version": "1.0",
+  "description": "NotebookLMにスライド作成用のプロンプトをワンクリックで挿入します",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "プロンプトを選択"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ]
+}
